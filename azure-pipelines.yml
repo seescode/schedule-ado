@@ -5,13 +5,14 @@
 
 trigger: none
 
-schedules:
-- cron: "* * * * *"
-  displayName: Every minute
-  branches:
-    include:
-    - main
-  always: true
+# This schedules to run every minute.  This has been tested and is working.
+# schedules:
+# - cron: "* * * * *"
+#   displayName: Every minute
+#   branches:
+#     include:
+#     - main
+#   always: true
 
 pool:
   vmImage: ubuntu-latest
